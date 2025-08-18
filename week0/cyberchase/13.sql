@@ -1,0 +1,1 @@
+select * from episodes where air_date = "2003-09-25";

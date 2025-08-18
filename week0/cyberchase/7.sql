@@ -1,0 +1,1 @@
+select title, topic from episodes where UPPER(topic) like upper("fractions%") or upper(topic) like upper("%fractions");

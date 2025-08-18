@@ -1,0 +1,1 @@
+SELECT districts.name, expenditures.per_pupil_expenditure from districts INNER JOIN expenditures ON expenditures.district_id = districts.id AND districts.type LIKE "Public School District" ORDER BY expenditures.per_pupil_expenditure DESC LIMIT 10

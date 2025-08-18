@@ -1,0 +1,1 @@
+select english_title as "darkest" from views where brightness > 0 order by brightness asc limit 1;
