@@ -1,0 +1,1 @@
+CREATE VIEW "june_vacancies" AS SELECT listings.id, listings.property_type, listings.host_name, count(availabilities.date) AS [days_vacant] FROM listings INNER JOIN availabilities ON availabilities.listing_id = listings.id AND availabilities.available LIKE "TRUE" AND availabilities.date LIKE "2023-06-%" GROUP BY listings.id;
