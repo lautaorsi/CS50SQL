@@ -1,0 +1,1 @@
+SELECT user_id FROM friends WHERE  friend_id = (SELECT id FROM users WHERE username LIKE "lovelytrust487") AND user_id IN ( SELECT user_id FROM friends WHERE  friend_id = (SELECT id FROM users WHERE username LIKE "exceptionalinspiration482"))
